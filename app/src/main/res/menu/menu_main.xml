@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.marcel.combiaqp.MainActivity">
+    <item
+        android:id="@+id/opcion1"
+        android:orderInCategory="100"
+        android:title="Buscar"
+        android:icon="@drawable/ic_action_buscar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/opcion2"
+        android:orderInCategory="100"
+        android:title="Compartir"
+        android:icon="@drawable/ic_action_compartir"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/opcion3"
+        android:orderInCategory="100"
+        android:title="Settings"
+        android:icon="@drawable/ic_action_settings"
+        app:showAsAction="never" />
+</menu>

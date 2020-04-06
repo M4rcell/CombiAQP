@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.marcel.combiaqp.MainActivity"
+    android:background="#ffffff">
+    >
+    <android.support.design.widget.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email"
+        android:background="@android:color/holo_blue_dark" />
+
+    /* CODIGO  MODIFICADO**/
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@style/AppTheme.NoActionBar"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.intel.combiaqp.MainActivity"
+
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp">
+
+        <ImageView
+            android:layout_width="447dp"
+            android:layout_height="186dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/fondo_300"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.21" />
+
+        <TextView
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:text=" Ingrese la Empresa"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/textView" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <AutoCompleteTextView
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcombis"
+                android:inputType="textShortMessage"
+                android:hint="Ej. Canarios C"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Buscar"
+
+                android:textColor="#fffafa"
+                android:id="@+id/btnbuscar"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/holo_blue_light"
+                android:layout_below="@+id/txtcombis"
+                android:gravity="center"
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Que ruta tomar"
+                android:id="@+id/button_ruta"
+                android:background="@android:color/holo_blue_light"
+                android:textColor="#fffafa" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="          "
+            android:id="@+id/textView12"
+            android:layout_below="@+id/button_ruta"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obtener mi posicion"
+            android:id="@+id/button_posicion"
+            android:layout_below="@+id/textView12"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="#fffafa" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/txtmostrar"
+            android:layout_weight="0.21"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:layout_width="149dp"
+            android:layout_height="46dp"
+            android:id="@+id/imageView9"
+            android:src="@drawable/logo300uap"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.21"></LinearLayout>
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
